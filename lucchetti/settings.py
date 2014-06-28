@@ -24,7 +24,7 @@ SECRETS = mysecrets.secrets
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = SECRETS.django_key
+SECRET_KEY = SECRETS['django_key']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -118,8 +118,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'django',
-        'USER': SECRETS.postgresql_username,
-        'PASSWORD': SECRETS.postgresql_password,
+        'USER': SECRETS['postgresql_username'],
+        'PASSWORD': SECRETS['postgresql_password'],
         'HOST': 'localhost',
         'PORT': '',
     }
