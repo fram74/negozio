@@ -13,18 +13,14 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-import mysecrets
-
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 gettext = lambda s: s
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
-SECRETS = mysecrets.secrets
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = SECRETS.django_key
+SECRET_KEY = 'z#zm5h!!k@01e&!n(ccw-s16id3)i=0iktbesq7-o#9l037$ln'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -116,12 +112,8 @@ LANGUAGES = [
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django',
-        'USER': SECRETS.postgresql_username,
-        'PASSWORD': SECRETS.postgresql_password,
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
