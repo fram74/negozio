@@ -104,6 +104,7 @@ ROOT_URLCONF = 'lucchetti.urls'
 
 WSGI_APPLICATION = 'lucchetti.wsgi.application'
 
+STATIC_ROOT = '/home/django/negozio/static'
 
 #django-cms
 LANGUAGES = [
