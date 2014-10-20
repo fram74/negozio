@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 gettext = lambda s: s
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
@@ -51,6 +52,18 @@ INSTALLED_APPS = (
     'djangocms_link',
     'djangocms_video',
     'djangocms_text_ckeditor',
+    'inline_ordering',
+    'filer',
+    'easy_thumbnails',
+    'novita',
+    'cmsplugin_filer_file',
+    'cmsplugin_filer_folder',
+    'cmsplugin_filer_image',
+    'cmsplugin_filer_teaser',
+    'cmsplugin_filer_video',
+    'slideshow',
+    'adminsortable',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -92,8 +105,8 @@ TEMPLATE_DIRS = (
 )
 
 CMS_TEMPLATES = (
-        ('template_1.html', 'Template One'),
-        ('template_2.html', 'Template Two'),
+        ('home_page_template.html', 'Template One'),
+        ('news_template.html', 'News Template'),
 )
 
 ROOT_URLCONF = 'lucchetti.urls'
@@ -106,6 +119,11 @@ LANGUAGES = [
     ('it', 'Italiano'),
     ('en', 'English'),
 ]
+
+#cmsplugin gallery
+GALLERY_TEMPLATES = (
+    ('djangocms_gallery/default.html',),
+)
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
@@ -134,4 +152,30 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(PROJECT_PATH, "static")
+STATIC_URL = "/static/"
+
+MEDIA_ROOT = os.path.join(PROJECT_PATH, "media")
+MEDIA_URL = "/media/"
+
+STATICFILES_DIRS = (
+    "/Users/fram/Development/cms-negozio/negozio/lucchetti/local_static/",
+)
+
+SOUTH_MIGRATION_MODULES = {
+        'easy_thumbnails': 'easy_thumbnails.south_migrations',
+    }
+
+THUMBNAIL_PROCESSORS = (
+    'easy_thumbnails.processors.colorspace',
+    'easy_thumbnails.processors.autocrop',
+    #'easy_thumbnails.processors.scale_and_crop',
+    'filer.thumbnail_processors.scale_and_crop_with_subject_location',
+    'easy_thumbnails.processors.filters',
+)
+
+CMSPLUGIN_FILER_IMAGE_STYLE_CHOICES = (
+    ('default', 'Default'),
+    ('promo-img', 'Promo Image'),
+)
+CMSPLUGIN_FILER_IMAGE_DEFAUL_STYLE = 'promo-img'

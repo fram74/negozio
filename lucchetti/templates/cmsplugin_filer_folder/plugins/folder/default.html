@@ -1,0 +1,43 @@
+{% load i18n thumbnail sekizai_tags %}
+{% addtoblock "css" %}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/jquery.bxslider.css" media="screen, projection" />
+    <script>
+    .bx-viewport {
+        box-shadow: ;
+        border: 0px ;
+        left: 0px;
+
+    }
+
+    </script>
+
+
+{% endaddtoblock "css" %}
+{% addtoblock "js" %}<script type="text/javascript" src="{{ STATIC_URL }}/js/jquery.bxslider.min.js"></script>{% endaddtoblock "js" %}
+{% addtoblock "js" %}
+<script type="text/javascript">
+
+
+
+//<![CDATA[
+
+
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+      pager: false,
+      auto: true
+  });
+
+  $('.bx-viewport').removeClass('bx-viewport');
+});
+//]]>
+</script>
+{% endaddtoblock %}
+
+<!-- start: slideshow -->
+    <ul class="bxslider">
+        {% for image in folder_images %}
+      <li><img  src="/media/{{ image.file }}" /></li>
+            {% endfor %}
+    </ul>
+<!-- end: gallery -->

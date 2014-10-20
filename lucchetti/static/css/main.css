@@ -44,20 +44,12 @@ h1 {
 }
 
 nav {
-    float: right;
-    width: 119px;
+    color:black;
+    width: 100%;
 }
 
 .hide-title-mobile {
     display: none;
-}
-
-.putto {
-    width: 60px;
-    height: 60px;
-    display: inline;
-    margin-top: 5px;
-    display:inline;
 }
 
 hr {
@@ -142,17 +134,37 @@ body {
 .footer-container,
 .main aside {
     background: white;
-    font-family: Times New Roman;
+    font-family: 'Montaga', serif;
     color: #2872a1;
 }
 
 .title {
     color: #2872a1;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-top: 10px;
     font-weight: normal;
-    float: left;
-    display:none;
+    float: center;
+    font-size: x-large;
+    width: 300px;
+    position: relative;
+    margin-left: 50%;
+
+    margin-right: 50%;
+    left: -150px;
+    text-align: center;
+    font-family: "Buenard";
+    font-weight: bolder;
+}
+
+.title-wrapper {
+    width: 100%;
+}
+
+.putto {
+    width: 60px;
+    height: 60px;
+    display: inline;
+    margin-top: 5px;
+    display:inline;
 }
 
 .frame-title {
@@ -197,26 +209,35 @@ a:hover > h2 > span {
 nav ul {
     margin: 0;
     padding: 0;
+    font-weight: normal;
 }
 
-nav a {
+nav ul li a {
     display: block;
-    padding: 2px 0;
+    padding-top: 10px;
 
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: large;
 
     color: white;
+    text-decoration: none;
+    margin-right: 15px;
 }
 
-nav a:hover,
-nav a:visited {
-    color: white;
+.news-wrapper {
+    display: inline-block;
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav ul li a:hover, nav ul li a:visited {
+    color: #2872a1;;
+
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #bfa47e;
 }
 
 .promo-img-container {
@@ -293,7 +314,7 @@ h2 {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 0px) {
 
 /* ====================
     INTERMEDIATE: Menu
@@ -301,9 +322,10 @@ h2 {
 
     nav a {
         float: left;
-        width: 27%;
+        width: 15%;
         margin: 0 1.7%;
         margin-bottom: 0;
+        font-weight: normal;
     }
 
     nav li:first-child a {
@@ -319,12 +341,18 @@ h2 {
         display: block;
     }
 
+    .title {
+        display:block;
+        font-size: xx-large;
+    }
+
+
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
 
     nav ul li {
-        display: inline;
+        display: block;
     }
 
     .oldie nav a {
@@ -333,12 +361,9 @@ h2 {
 }
 
 @media only screen and (min-width: 580px) {
-    .putto {
+    /*.putto {
         display: none;
-    }
-    .title {
-        display:block;
-    }
+    }*/
 
     .rolex-img {
         margin-top: 5px;
@@ -391,9 +416,15 @@ h2 {
     }
 
     .promo-img-container {
-        width:76%;
+        width:65%;
         position: relative;
         float:left;
+    }
+
+    .promo-sec-img-container {
+        width:35%;
+        position: relative;
+        float:right;
     }
 
     .promo-text-container-left {

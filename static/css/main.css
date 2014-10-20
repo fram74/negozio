@@ -1,0 +1,598 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+.promo-img {
+    width: 100%;
+    border: solid 2px ;
+    /*background-color: #bfa47e;*/
+    background-color: #bfa47e;
+    left:-7px;
+    padding: 5px;
+    position: relative;
+
+}
+
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    float: right;
+    width: 119px;
+}
+
+.hide-title-mobile {
+    display: none;
+}
+
+.putto {
+    width: 60px;
+    height: 60px;
+    display: inline;
+    margin-top: 5px;
+    display:inline;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    /*font: 16px/26px Times New Roman, Helvetica, Helvetica Neue, Arial;*/
+    font-family: 'Montaga', serif;
+    background: #538eb4;
+    color: white;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: 0px solid #e44d26;
+}
+
+.img-overlay-top {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 100%;
+    background-image: url('../img/grey-background.png');
+}
+
+.img-overlay-bottom {
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 100%;
+    background-image: url('../img/grey-background.png');
+}
+.content-overlay {
+    padding:10px;
+    position: relative;
+}
+
+
+.header-container,
+.footer-container,
+.main aside {
+    background: white;
+    font-family: 'Montaga', serif;
+    color: #2872a1;
+}
+
+.title {
+    color: #2872a1;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: normal;
+    float: left;
+    display:none;
+}
+
+.frame-title {
+    border-width:15px 15px 15px 15px;
+    -moz-border-image:url("../img/cornice-luigi.png") 25 25 25 25 repeat stretch;
+    -webkit-border-image:url("../img/cornice-luigi.png") 25 25 25 25 repeat stretch;
+    border-image:url("../img/cornice-luigi.png") 25 25 25 25 repeat stretch;
+}
+
+.frame-button {
+    border-width:15px 15px 15px 15px;
+    -moz-border-image:url("../img/cornice-bottone.png") 25 25 25 25 repeat stretch;
+    -webkit-border-image:url("../img/cornice-bottone.png") 25 25 25 25 repeat stretch;
+    border-image:url("../img/cornice-bottone.png") 25 25 25 25 repeat stretch;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+    display: block;
+
+}
+
+a:hover > h2 > span {
+    border-width:15px 15px 15px 15px;
+    -moz-border-image:url("../img/cornice-bottone-over.png") 25 25 25 25 repeat stretch;
+    -webkit-border-image:url("../img/cornice-bottone-over.png") 25 25 25 25 repeat stretch;
+    border-image:url("../img/cornice-bottone-over.png") 25 25 25 25 repeat stretch;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+    background-color: #bfa47e;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 2px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.promo-img-container {
+    width:100%;
+    position: relative;
+    float:none;
+}
+
+.promo-text-container-left {
+    width:100%;
+    position: relative;
+    float: none;
+    display: block;
+
+}
+
+.promo-text-container-right {
+    width:100%;
+    position: relative;
+    float: none;
+    display: block;
+
+}
+h2 {
+    text-align: center; margin-left: auto; margin-right: auto;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    height:100%;
+    background-color: white;
+
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 20%;
+        margin: 0 1.7%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+
+    .hide-title-mobile {
+        display: block;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 580px) {
+    .putto {
+        display: none;
+    }
+    .title {
+        display:block;
+    }
+
+    .rolex-img {
+        margin-top: 5px;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+/*
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+*/
+
+    .frame-button {
+        display: inline;
+        font-size: medium;
+    }
+
+    .frame-button {
+        border-width:25px 25px 25px 25px;
+        -moz-border-image:url("../img/cornice-bottone.png") 25 25 25 25 repeat stretch;
+        -webkit-border-image:url("../img/cornice-bottone.png") 25 25 25 25 repeat stretch;
+        border-image:url("../img/cornice-bottone.png") 25 25 25 25 repeat stretch;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        font-weight: normal;
+        text-decoration: none;
+
+    }
+
+    a:hover > h2 > span {
+        border-width:23px 23px 23px 23px;
+        -moz-border-image:url("../img/cornice-bottone-over.png") 25 25 25 25 repeat stretch;
+        -webkit-border-image:url("../img/cornice-bottone-over.png") 25 25 25 25 repeat stretch;
+        border-image:url("../img/cornice-bottone-over.png") 25 25 25 25 repeat stretch;
+        font-weight: normal;
+        text-decoration: none;
+        background-color: #bfa47e;
+    }
+
+    .promo-img-container {
+        width:76%;
+        position: relative;
+        float:left;
+    }
+
+    .promo-text-container-left {
+        width:24%;
+        position: relative;
+        float: left;
+        display: block;
+
+    }
+
+    .promo-text-container-right {
+        width:24%;
+        position: relative;
+        float: right;
+        display: block;
+
+    }
+
+    .promo-wrapper {
+        clear: both;
+        padding-top: 1px;
+    }
+
+    h2 {
+       text-align: center; margin-left: auto; margin-right: auto; margin-top: 85%
+    }
+
+
+
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+
+    .frame-button {
+        font-size: x-large;
+    }
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

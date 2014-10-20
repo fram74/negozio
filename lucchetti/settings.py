@@ -55,6 +55,12 @@ INSTALLED_APPS = (
     'djangocms_link',
     'djangocms_video',
     'djangocms_text_ckeditor',
+    'filer',
+    'cmsplugin_filer_file',
+    'cmsplugin_filer_folder',
+    'cmsplugin_filer_image',
+    'cmsplugin_filer_teaser',
+    'cmsplugin_filer_video',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -111,6 +117,7 @@ LANGUAGES = [
     ('it', 'Italiano'),
     ('en', 'English'),
 ]
+
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases

@@ -1,0 +1,56 @@
+{% extends "base-negozio.html" %}
+{% load cms_tags %}
+
+{% block base_content %}
+
+
+            <div class="main wrapper clearfix">
+                <div class='promo-wrapper'>
+                    <div class='promo-img-container promo-container'>
+                        {% placeholder rolex_corner %}
+                    </div>
+                    <div class='promo-sec-img-container promo-container' style='-webkit-tap-highlight-color: rgba(0,0,0,0);'>
+                        {% placeholder marchi_promo %}
+                    </div>
+
+
+
+                </div>
+                <div class='promo-wrapper'>
+
+                    <div class='promo-sec-img-container-left promo-container' style='-webkit-tap-highlight-color: rgba(0,0,0,0);'>
+                        {% placeholder promo_image_2_1 %}
+                    </div>
+                    <div class='promo-img-container-right promo-container'>
+                        {% placeholder promo_image_2_2 %}
+                        <div class='img-overlay-top'>
+                            <div class='content-overlay'>
+                                <h4>{% placeholder promo_text_2_2 %}</h4>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='promo-wrapper'>
+                     <div class='promo-sec-img-container' style='-webkit-tap-highlight-color: rgba(0,0,0,0);'>
+                        <div class="promo-container small-img">
+                        {% placeholder promo_image_3_2 %}
+                        </div>
+                        <div class="promo-container">
+                        {% placeholder promo_image_3_3 %}
+                        </div>
+                    </div>
+                    <div class='promo-img-container promo-container small-img'>
+                        {% placeholder promo_image_3_1 %}
+                    </div>
+
+
+
+
+                </div>
+
+                <div style='clear:both;'></div>
+
+            </div> <!-- #main -->
+{% endblock %}
