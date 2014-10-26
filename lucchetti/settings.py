@@ -173,3 +173,12 @@ STATICFILES_DIRS = "/home/django/negozio/lucchetti/static/"
 SOUTH_MIGRATION_MODULES = {
     'easy_thumbnails': 'easy_thumbnails.south_migrations',
 }
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.6/howto/static-files/
+
+STATIC_ROOT = os.path.join(PROJECT_PATH, "static")
+STATIC_URL = "/static/"
+
+MEDIA_ROOT = os.path.join(PROJECT_PATH, "media")
+MEDIA_URL = "/media/"
