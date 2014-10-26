@@ -55,12 +55,17 @@ INSTALLED_APPS = (
     'djangocms_link',
     'djangocms_video',
     'djangocms_text_ckeditor',
+    'inline_ordering',
     'filer',
+    'easy_thumbnails',
+    'novita',
     'cmsplugin_filer_file',
     'cmsplugin_filer_folder',
     'cmsplugin_filer_image',
     'cmsplugin_filer_teaser',
     'cmsplugin_filer_video',
+    'slideshow',
+    'adminsortable',
 )
 
 MIDDLEWARE_CLASSES = (
