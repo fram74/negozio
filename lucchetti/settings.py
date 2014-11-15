@@ -99,6 +99,11 @@ TEMPLATE_CONTEXT_PROCESSORS = (
         'sekizai.context_processors.sekizai',
 )
 
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+)
+
 TEMPLATE_DIRS = (
         # The docs say it should be absolute path: PROJECT_PATH is precisely
         # one.
