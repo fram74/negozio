@@ -178,4 +178,5 @@ CMSPLUGIN_FILER_IMAGE_STYLE_CHOICES = (
     ('default', 'Default'),
     ('promo-img', 'Promo Image'),
 )
+
 CMSPLUGIN_FILER_IMAGE_DEFAUL_STYLE = 'promo-img'
