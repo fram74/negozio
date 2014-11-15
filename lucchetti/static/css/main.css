@@ -29,15 +29,28 @@ a {
 
 .promo-img {
     width: 100%;
+
+}
+
+
+.promo-img-old {
+    width: 100%;
     border: solid 2px ;
     /*background-color: #bfa47e;*/
     background-color: #bfa47e;
     left:-7px;
-    padding: 5px;
+    padding: 3px;
     position: relative;
-
+    color: transparent;
 }
 
+.bxslider {
+    margin: 0px;
+}
+
+.bx-controls {
+    display: none;
+}
 
 h1 {
     text-align: center;
@@ -68,6 +81,20 @@ video {
     vertical-align: middle;
 }
 
+.promo-container {
+    border: solid 1px #bfa47e;
+}
+
+.promo-container:hover {
+    -moz-box-shadow:    inset 0 0 10px #bfa47e;
+   -webkit-box-shadow: inset 0 0 10px #bfa47e;
+   box-shadow:         inset 0 0 10px #bfa47e;
+}
+
+.small-img {
+    margin-bottom:4%;
+}
+
 fieldset {
     border: 0;
     margin: 0;
@@ -92,7 +119,7 @@ textarea {
 
 body {
     font: 16px/26px Times New Roman, Helvetica, Helvetica Neue, Arial;
-    background: #538eb4;
+    /*background: #538eb4;*/
     color: white;
 }
 
@@ -100,6 +127,8 @@ body {
     width: 90%;
     margin: 0 5%;
 }
+
+
 
 /* ===================
     ALL: Orange Theme
@@ -246,21 +275,39 @@ nav ul li a:hover {
     float:none;
 }
 
-.promo-text-container-left {
-    width:100%;
+.promo-sec-img-container {
+    width:33.3%;
     position: relative;
-    float: none;
+    float:right;
+    border: 2 solid black;
+    display: block;
+}
+
+.promo-sec-img-container-left {
+    width:33.3%;
+    position: relative;
+    float:left;
+    border: 2 solid black;
+    display: block;
+}
+
+.promo-text-container-left {
+    width:24%;
+    position: relative;
+    float: left;
     display: block;
 
 }
 
 .promo-text-container-right {
-    width:100%;
+    width:24%;
     position: relative;
-    float: none;
+    float: right;
     display: block;
 
 }
+
+
 h2 {
     text-align: center; margin-left: auto; margin-right: auto;
 }
@@ -322,7 +369,7 @@ h2 {
 
     nav a {
         float: left;
-        width: 15%;
+        width: 13%;
         margin: 0 1.7%;
         margin-bottom: 0;
         font-weight: normal;
@@ -421,27 +468,29 @@ h2 {
         float:left;
     }
 
-    .promo-sec-img-container {
-        width:35%;
+    .promo-img-container-right {
+        width:65%;
         position: relative;
         float:right;
     }
 
-    .promo-text-container-left {
-        width:24%;
+    .promo-img-container-full {
+        width:100%;
         position: relative;
-        float: left;
-        display: block;
-
+        float:left;
     }
 
-    .promo-text-container-right {
-        width:24%;
-        position: relative;
-        float: right;
-        display: block;
-
+    .promo-3-container {
+        width:30%;
+        display: inline-block;
+        padding-right: 5px;
     }
+
+    .promo-container {
+        border: solid 2px #bfa47e;
+    }
+
+
 
     .promo-wrapper {
         clear: both;
@@ -493,6 +542,10 @@ h2 {
 
     .frame-button {
         font-size: x-large;
+    }
+
+    .promo-container {
+        border: solid 3px #bfa47e;
     }
 
 }
