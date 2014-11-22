@@ -27,6 +27,16 @@ a {
     text-shadow: none;
 }
 
+.left-footer {
+    position:relative;
+    float: left;
+}
+
+.right-footer {
+    position: relative;
+    float: right;
+}
+
 .promo-img {
     width: 100%;
 

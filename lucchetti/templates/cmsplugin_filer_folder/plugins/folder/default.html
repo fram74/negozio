@@ -25,7 +25,10 @@
 $(document).ready(function(){
   $('.bxslider').bxSlider({
       pager: false,
-      auto: true
+      auto: true,
+      onSliderLoad: function(){
+        $("#site-slides").css("visibility", "visible");
+      }
   });
 
   $('.bx-viewport').removeClass('bx-viewport');

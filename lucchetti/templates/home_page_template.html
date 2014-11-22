@@ -1,15 +1,17 @@
 {% extends "base-negozio.html" %}
 {% load cms_tags %}
 
+{% block extra_js %}
+{% endblock %}
+
 {% block base_content %}
 
 
-            <div class="main wrapper clearfix">
-                <div class='promo-wrapper'>
+            <div class='promo-wrapper'>
                     <div class='promo-img-container promo-container'>
                         {% placeholder rolex_corner %}
                     </div>
-                    <div class='promo-sec-img-container promo-container' style='-webkit-tap-highlight-color: rgba(0,0,0,0);'>
+                    <div class='promo-sec-img-container promo-container' id='site-slides' style='visibility: hidden; -webkit-tap-highlight-color: rgba(0,0,0,0);'>
                         {% placeholder marchi_promo %}
                     </div>
 
@@ -23,12 +25,7 @@
                     </div>
                     <div class='promo-img-container-right promo-container'>
                         {% placeholder promo_image_2_2 %}
-                        <div class='img-overlay-top'>
-                            <div class='content-overlay'>
-                                <h4>{% placeholder promo_text_2_2 %}</h4>
 
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -52,5 +49,5 @@
 
                 <div style='clear:both;'></div>
 
-            </div> <!-- #main -->
+
 {% endblock %}
