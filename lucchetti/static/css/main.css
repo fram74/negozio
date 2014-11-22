@@ -32,6 +32,10 @@ a {
     float: left;
 }
 
+.left-footer > p {
+    margin: 0px;
+}
+
 .right-footer {
     position: relative;
     float: right;
