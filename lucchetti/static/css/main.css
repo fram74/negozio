@@ -35,6 +35,7 @@ a {
 .right-footer {
     position: relative;
     float: right;
+    margin:5px;
 }
 
 .promo-img {
