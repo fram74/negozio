@@ -36,6 +36,7 @@ a {
     position: relative;
     float: right;
     margin:5px;
+    min-width: 100px;
 }
 
 .promo-img {
