@@ -43,6 +43,10 @@ a {
     min-width: 200px;
 }
 
+.right-footer > p {
+    margin: 0px;
+}
+
 .promo-img {
     width: 100%;
 
