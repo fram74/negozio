@@ -120,8 +120,6 @@ ROOT_URLCONF = 'lucchetti.urls'
 
 WSGI_APPLICATION = 'lucchetti.wsgi.application'
 
-STATIC_ROOT = '/home/django/negozio/static'
-
 #django-cms
 LANGUAGES = [
     ('it', 'Italiano'),
@@ -181,10 +179,10 @@ SOUTH_MIGRATION_MODULES = {
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_ROOT = os.path.join(PROJECT_PATH, "static")
+STATIC_ROOT = "/var/www/static/"
 STATIC_URL = "/static/"
 
-MEDIA_ROOT = os.path.join(PROJECT_PATH, "media")
+MEDIA_ROOT = "/var/www/media/"
 MEDIA_URL = "/media/"
 
 THUMBNAIL_PROCESSORS = (
