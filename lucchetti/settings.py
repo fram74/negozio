@@ -179,6 +179,10 @@ SOUTH_MIGRATION_MODULES = {
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_PATH, "static"),
+)
+
 STATIC_ROOT = "/var/www/static/"
 STATIC_URL = "/static/"
 
