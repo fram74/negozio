@@ -106,9 +106,7 @@ video {
 }
 
 .promo-container:hover {
-    -moz-box-shadow:    inset 0 0 10px #bfa47e;
-   -webkit-box-shadow: inset 0 0 10px #bfa47e;
-   box-shadow:         inset 0 0 10px #bfa47e;
+   border: solid 2px #538eb4;
 }
 
 .small-img {
