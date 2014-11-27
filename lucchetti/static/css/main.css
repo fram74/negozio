@@ -106,7 +106,10 @@ video {
 }
 
 .promo-container:hover {
-   border: solid 3px #538eb4;
+    -webkit-box-shadow: 0px 0px 3px 3px #bfa47e;
+    -moz-box-shadow: 0px 0px 3px 3px #bfa47e;
+    box-shadow: 0px 0px 3px 3px #bfa47e;
+    border: solid 2px #bfa47e;
 }
 
 .small-img {
