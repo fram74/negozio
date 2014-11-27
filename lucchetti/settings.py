@@ -115,6 +115,7 @@ CMS_TEMPLATES = (
         ('home_page_template.html', 'Template One'),
         ('news_template.html', 'News Template'),
         ('plain_page.html', 'Pagina Vuota'),
+        ('timeline.html', 'Timeline'),
 )
 
 ROOT_URLCONF = 'lucchetti.urls'
