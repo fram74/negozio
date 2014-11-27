@@ -114,6 +114,7 @@ TEMPLATE_DIRS = (
 CMS_TEMPLATES = (
         ('home_page_template.html', 'Template One'),
         ('news_template.html', 'News Template'),
+        ('plain_page.html', 'Pagina Vuota'),
 )
 
 ROOT_URLCONF = 'lucchetti.urls'
