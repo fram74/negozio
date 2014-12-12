@@ -27,7 +27,7 @@ SECRETS = mysecrets.secrets
 SECRET_KEY = SECRETS['django_key']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = True
 

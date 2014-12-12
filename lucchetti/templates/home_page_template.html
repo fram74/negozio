@@ -2,6 +2,8 @@
 {% load cms_tags %}
 
 {% block extra_js %}
+<script type="text/javascript" src="/static/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" href="/static/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 {% endblock %}
 
 {% block base_content %}
@@ -38,7 +40,7 @@
                         {% placeholder promo_image_3_3 %}
                         </div>
                     </div>
-                    <div class='promo-img-container promo-container small-img'>
+                    <div class='promo-img-container promo-container'>
                         {% placeholder promo_image_3_1 %}
                     </div>
 
@@ -51,3 +53,31 @@
 
 
 {% endblock %}
+{% block end_extra_js %}
+<script>
+$(document).ready(function() {
+
+        /* This is basic - uses default settings */
+        
+        $("a").fancybox();
+        
+        /* Using custom settings */
+        
+        $("a#inline").fancybox({
+                'hideOnContentClick': true
+        });
+
+        /* Apply fancybox to multiple items */
+        
+        $("a.group").fancybox({
+                'transitionIn'  :       'elastic',
+                'transitionOut' :       'elastic',
+                'speedIn'               :       600, 
+                'speedOut'              :       200, 
+                'overlayShow'   :       false
+        });
+        
+});
+</script>
+{% endblock %}
+</script>

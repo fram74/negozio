@@ -45,6 +45,7 @@ a {
 
 .right-footer > p {
     margin: 0px;
+    line-height: 1.2em;
 }
 
 .promo-img {
@@ -141,12 +142,11 @@ textarea {
 body {
     font: 16px/26px Times New Roman, Helvetica, Helvetica Neue, Arial;
     /*background: #538eb4;*/
-    color: white;
+    color: #2872a1;
 }
 
 .wrapper {
     width: 90%;
-    margin: 0 5%;
 }
 
 
@@ -186,6 +186,10 @@ body {
     background: white;
     font-family: 'Montaga', serif;
     color: #2872a1;
+}
+
+.main {
+    min-width: 1024px;
 }
 
 .title {
@@ -271,7 +275,7 @@ nav ul li a {
     font-weight: normal;
     font-size: large;
 
-    color: white;
+    color: #2872a1;
     text-decoration: none;
     margin-right: 15px;
 }
@@ -439,9 +443,9 @@ h2 {
 
 }
 
-
+/*
 @media only screen and (min-width: 768px) {
-
+*/
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
@@ -548,7 +552,7 @@ h2 {
         float: right;
         width: 28%;
     }
-}
+
 
 @media only screen and (min-width: 1140px) {
 

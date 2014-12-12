@@ -42,20 +42,103 @@
 
             {% block base_content %}
             {% endblock %}
-            <div class="footer-container" style='background-color:white; margin-top:5px;'>
-            <div class="left-footer">
-                {% placeholder left_footer %}
+	<div class="footer-container" style="background-color:white; margin-top:5px;background-color: lightblue;">
+            <div class="left-footer" style="
+    width: 200px;
+    margin-bottom: 32px;
+    background-color: light;
+">
+                <p style="text-align: center;"><span>Dodo</span></p>
+
+<p style="text-align: center;">Pomellato 67</p>
+
+<p style="text-align: center;">Pandora</p>
+
+<p style="text-align: center;">Leo Pizzo</p>
+
+<p style="text-align: center;">Crivelli</p>
+
+<p style="text-align: center;">Santagostino</p>
+
+<p style="text-align: center;">Adolfo Courrier</p>
+
+<p style="text-align: center;">MiMi'</p>
+
+<p style="text-align: center;"><span style="">Giovanni Raspini</span></p>
+
+<p style="text-align: center;"><span style="">le Bebe'</span></p>
+
+<p style="text-align: center;">Giorgio Visconti</p>
+
+<p style="text-align: center;"><span style="">Nouvelle Bague</span></p>
+
+<p style="text-align: center;">Silvia Kelly</p>
+
+<p style="text-align: center;">Pippo Perez</p>
+
+</div><div class="left-footer" style="
+    width: 200px;
+    margin-top: 44px;
+">
+<p style="text-align: center;">Rolex</p>
+
+<p style="text-align: center;">Tudor</p>
+
+<p style="text-align: center;">Mont Blanc</p>
+
+<p style="text-align: center;">Baume Mercier</p>
+
+<p style="text-align: center;">Tissot</p>
+
+<p style="text-align: center;">Citizen</p>
+
+<p style="text-align: center;">CK</p>
+
+<p style="text-align: center;">Swatch</p>
+
+<p style="text-align: center;">Flick Flack</p>
+</div><div style="position: relative;
+float: right;
+margin: 5px;">
+                <a href="https://www.facebook.com/luigilucchetti" class="filer_image_link"><img class="filer_image " alt="Facebook_icon_1_color.jpg" src="/media/filer_public_thumbnails/filer_public/8f/02/8f0269f1-bb65-475f-865f-07973ac6ace6/facebook_icon_1_color.jpg__52x52_q85_crop_subsampling-2_upscale.jpg"></a>
+<br>
             </div>
-            <div class="right-footer">
-                {% placeholder right_footer %}
+	
+
+	<div class="right-footer" style="
+    margin-right: 15px;
+    margin-top: 24px;
+">
+                <p style="text-align: center;">Luigi Lucchetti Sas</p>
+
+<p style="text-align: center;">di Giovanni Lucchetti &amp; C.</p>
+
+<p style="text-align: center;">Via Martiri della Liberazione, 54-60</p>
+
+<p style="text-align: center;">16043 Chiavari (GE)</p>
+
+<p>&nbsp;</p>
+<p style="line-height: 20.7999992370605px; text-align: center;">P.IVA 00190470997</p>
+
+<p style="line-height: 20.7999992370605px; text-align: center;">Tel: (+39) 0185 309618</p>
+
+<p style="line-height: 20.7999992370605px; text-align: center;">Fax:&nbsp;<span style="line-height: 20.7999992370605px;">(+39) 0185 300256</span></p>
+
+<p style="line-height: 20.7999992370605px; text-align: center;"><span style="line-height: 20.7999992370605px;">Email: info@luigilucchetti.com</span></p>
+
             </div>
-            <div class="right-footer">
-                {% placeholder right_footer_1 %}
+            <div class="right-footer" style="
+    margin-top: 50px;
+">
+                <img class="filer_image left" alt="putto.jpg" src="/media/filer_public_thumbnails/filer_public/ea/6d/ea6d33b0-6b8a-4728-a2fb-01fbc7d1bcdd/putto.jpg__150x150_q85_crop_subsampling-2_upscale.jpg" width="150" height="150">
+
             </div>
-            <div class="right-footer">
-                {% placeholder right_footer_2 %}
+	
+
+            </div>
             </div>
         </div> <!-- #main -->
+
 
 
 
@@ -81,5 +164,7 @@
         </script>
 
         {% render_block "js" %}
+	{% block end_extra_js %}
+        {% endblock %}
     </body>
 </html>
