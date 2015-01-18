@@ -186,6 +186,7 @@ body {
     background: white;
     font-family: 'Montaga', serif;
     color: #2872a1;
+    margin-bottom:10px;
 }
 
 .main {
@@ -354,6 +355,16 @@ h2 {
     height:100%;
     background-color: white;
 
+}
+
+.left-footer p {
+    line-height: 20.7999992370605px;
+    text-align: center;
+}
+
+.right-footer p {
+    line-height: 20.7999992370605px;
+    text-align: center;
 }
 
 /* ===============
