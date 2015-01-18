@@ -4,167 +4,132 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montaga|Buenard">
-        <link rel="stylesheet" href="/static/css/normalize.min.css">
-        <link rel="stylesheet" href="/static/css/main.css">
-        {% render_block "css" %}
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        {% block extra_js %}
-        {% endblock %}
-    </head>
-    <body>
-        {% cms_toolbar %}
-        <!--[if lt IE 7]>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montaga|Buenard">
+    <link rel="stylesheet" href="/static/css/normalize.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    {% render_block "css" %}
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    {% block extra_js %}
+    {% endblock %}
+</head>
+<body>
+{% cms_toolbar %}
+<!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="header-container">
-            <header class="wrapper clearfix">
-                <div class="title-wrapper"><img class="title " src="/static/img/logo-lucchetti.jpg"></span></div>
-                <div>
-                <nav>
-                    <ul>
-                        {% show_menu 0 100 100 100 %}
-                    </ul>
-                </nav>
-                </div>
-            </header>
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <div class="title-wrapper"><img class="title " src="/static/img/logo-lucchetti.jpg"></span></div>
+        <div>
+            <nav>
+                <ul>
+                    {% show_menu 0 100 100 100 %}
+                </ul>
+            </nav>
         </div>
+    </header>
+</div>
 
-        <div class="main-container">
-            <div class="main wrapper clearfix">
+<div class="main-container">
+    <div class="main wrapper clearfix">
 
-            {% block base_content %}
-            {% endblock %}
-	<div class="footer-container" style="background-color:white; margin-top:5px;background-color: lightblue;">
-            <div class="left-footer" style="
-    width: 200px;
-    margin-bottom: 32px;
-    background-color: light;
-">
-                <p style="text-align: center;"><span>Dodo</span></p>
-
-<p style="text-align: center;">Pomellato 67</p>
-
-<p style="text-align: center;">Pandora</p>
-
-<p style="text-align: center;">Leo Pizzo</p>
-
-<p style="text-align: center;">Crivelli</p>
-
-<p style="text-align: center;">Santagostino</p>
-
-<p style="text-align: center;">Adolfo Courrier</p>
-
-<p style="text-align: center;">MiMi'</p>
-
-<p style="text-align: center;"><span style="">Giovanni Raspini</span></p>
-
-<p style="text-align: center;"><span style="">le Bebe'</span></p>
-
-<p style="text-align: center;">Giorgio Visconti</p>
-
-<p style="text-align: center;"><span style="">Nouvelle Bague</span></p>
-
-<p style="text-align: center;">Silvia Kelly</p>
-
-<p style="text-align: center;">Pippo Perez</p>
-
-</div><div class="left-footer" style="
-    width: 200px;
-    margin-top: 44px;
-">
-<p style="text-align: center;">Rolex</p>
-
-<p style="text-align: center;">Tudor</p>
-
-<p style="text-align: center;">Mont Blanc</p>
-
-<p style="text-align: center;">Baume Mercier</p>
-
-<p style="text-align: center;">Tissot</p>
-
-<p style="text-align: center;">Citizen</p>
-
-<p style="text-align: center;">CK</p>
-
-<p style="text-align: center;">Swatch</p>
-
-<p style="text-align: center;">Flick Flack</p>
-</div><div style="position: relative;
-float: right;
-margin: 5px;">
-                <a href="https://www.facebook.com/luigilucchetti" class="filer_image_link"><img class="filer_image " alt="Facebook_icon_1_color.jpg" src="/media/filer_public_thumbnails/filer_public/8f/02/8f0269f1-bb65-475f-865f-07973ac6ace6/facebook_icon_1_color.jpg__52x52_q85_crop_subsampling-2_upscale.jpg"></a>
-<br>
-            </div>
-	
-
-	<div class="right-footer" style="
-    margin-right: 15px;
-    margin-top: 24px;
-">
-                <p style="text-align: center;">Luigi Lucchetti Sas</p>
-
-<p style="text-align: center;">di Giovanni Lucchetti &amp; C.</p>
-
-<p style="text-align: center;">Via Martiri della Liberazione, 54-60</p>
-
-<p style="text-align: center;">16043 Chiavari (GE)</p>
-
-<p>&nbsp;</p>
-<p style="line-height: 20.7999992370605px; text-align: center;">P.IVA 00190470997</p>
-
-<p style="line-height: 20.7999992370605px; text-align: center;">Tel: (+39) 0185 309618</p>
-
-<p style="line-height: 20.7999992370605px; text-align: center;">Fax:&nbsp;<span style="line-height: 20.7999992370605px;">(+39) 0185 300256</span></p>
-
-<p style="line-height: 20.7999992370605px; text-align: center;"><span style="line-height: 20.7999992370605px;">Email: info@luigilucchetti.com</span></p>
-
-            </div>
-            <div class="right-footer" style="
-    margin-top: 50px;
-">
-                <img class="filer_image left" alt="putto.jpg" src="/media/filer_public_thumbnails/filer_public/ea/6d/ea6d33b0-6b8a-4728-a2fb-01fbc7d1bcdd/putto.jpg__150x150_q85_crop_subsampling-2_upscale.jpg" width="150" height="150">
-
-            </div>
-	
-
-            </div>
-            </div>
-        </div> <!-- #main -->
-
-
-
-
-        </div>
-        </div> <!-- #main-container -->
-
-
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-
-        {% render_block "js" %}
-	{% block end_extra_js %}
+        {% block base_content %}
         {% endblock %}
-    </body>
+        <div class="footer-container" style="background-color:white; margin-top:5px;background-color: lightblue;">
+            <div class="left-footer" style="width: 200px; margin-bottom: 9px; background-color: light;">
+                <p ><span>Dodo</span></p>
+                <p >Pomellato 67</p>
+                <p >Pandora</p>
+                <p >Leo Pizzo</p>
+                <p >Crivelli</p>
+                <p >Santagostino</p>
+                <p >Adolfo Courrier</p>
+                <p >MiMi'</p>
+                <p ><span style="">Giovanni Raspini</span></p>
+                <p ><span style="">le Bebe'</span></p>
+                <p >Giorgio Visconti</p>
+                <p ><span style="">Nouvelle Bague</span></p>
+                <p >Silvia Kelly</p>
+                <p >Pippo Perez</p>
+            </div>
+            <div class="left-footer" style="width: 200px; margin-top: 58px;">
+                <p >Rolex</p>
+
+                <p >Tudor</p>
+
+                <p >Mont Blanc</p>
+
+                <p >Baume Mercier</p>
+
+                <p >Tissot</p>
+
+                <p >Citizen</p>
+
+                <p >CK</p>
+
+                <p >Swatch</p>
+
+                <p >Flick Flack</p>
+            </div>
+            <div style="position: relative; float: right; margin-bottom: 5px;">
+
+            </div>
+
+            <div class="right-footer" style="margin-right: 15px; margin-top: 24px;">
+                <p class='footer-text'>Luigi Lucchetti Sas</p>
+                <p class='footer-text'>di Giovanni Lucchetti &amp; C.</p>
+                <p class='footer-text'>Via Martiri della Liberazione, 54-60</p>
+                <p class='footer-text'>16043 Chiavari (GE)</p>
+                <p>&nbsp;</p>
+                <p class='footer-text'>P.IVA 00190470997</p>
+                <p class='footer-text'>Tel: (+39) 0185 309618</p>
+                <p class='footer-text'>Fax:&nbsp;<span style="line-height: 20.7999992370605px;">(+39) 0185 300256</span></p>
+                <p class='footer-text'><span style="line-height: 20.7999992370605px;">Email: info@luigilucchetti.com</span></p>
+                <p style="line-height: 20.7999992370605px; text-align: center;margin-top: 29px;"><a href="https://www.facebook.com/luigilucchetti" class="filer_image_link">
+                    <img style="width: 32px; height: 32px;" class="filer_image " alt="Facebook_icon_1_color.jpg" src="/media/filer_public_thumbnails/filer_public/8f/02/8f0269f1-bb65-475f-865f-07973ac6ace6/facebook_icon_1_color.jpg__52x52_q85_crop_subsampling-2_upscale.jpg"></a>
+                <p/>
+                    <br>
+            </div>
+            <div class="right-footer" style="margin-top: 64px;">
+                <img class="filer_image left" alt="putto.jpg" src="/media/filer_public_thumbnails/filer_public/ea/6d/ea6d33b0-6b8a-4728-a2fb-01fbc7d1bcdd/putto.jpg__150x150_q85_crop_subsampling-2_upscale.jpg" width="150" height="150">
+            </div>
+        </div>
+    </div>
+</div> <!-- #main -->
+
+
+
+
+</div>
+</div> <!-- #main-container -->
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+
+{% render_block "js" %}
+{% block end_extra_js %}
+{% endblock %}
+</body>
 </html>
