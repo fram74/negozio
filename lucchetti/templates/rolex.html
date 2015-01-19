@@ -1,9 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+{% extends "base-negozio.html" %}
+{% load cms_tags %}
 
-</body>
-</html>
+{% block extra_js %}
+{% endblock %}
+
+{% block base_content %}
+    <iframe id="tudor-digital-corner" src="http://www.tudorwatch.com/corners/tudor_800x500?lang=it&dealerDomain=www.luigilucchetti.com/&dealerAPIKey=2bb0e4657b7a368844ae36d214b60906" frameborder="0"
+            style="width:800px;height:500px;border:none;overflow:hidden;"></iframe>
+
+    <iframe id="rolex-digital-corners" src="http://www.rolex.com/digital-corners/DigitalCorners.aspx?lang=it&size=3&dealerAPIKey=2bb0e4657b7a368844ae36d214b60906&currentDomain=http://www.rolex.com&imageDomain=http://www.rolex.com&apiDomain=http://www.rolex.com"
+            style="width:800px;height:500px;border:none;overflow:hidden;"></iframe>
+
+{% endblock %}
