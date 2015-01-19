@@ -116,6 +116,7 @@ CMS_TEMPLATES = (
         ('news_template.html', 'News Template'),
         ('plain_page.html', 'Pagina Vuota'),
         ('timeline.html', 'Timeline'),
+        ('rolex.html', 'Rolex'),
 )
 
 ROOT_URLCONF = 'lucchetti.urls'
@@ -190,6 +191,8 @@ STATIC_URL = "/static/"
 
 MEDIA_ROOT = "/var/www/media/"
 MEDIA_URL = "/media/"
+
+MEDIA_ROOT_DEV = os.path.join(PROJECT_PATH, "var/www/static")
 
 THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.colorspace',
