@@ -133,6 +133,11 @@ body {
     color: white;
 }
 
+
+.contatti {
+    line-height: 0.5em;
+}
+
 .wrapper {
     width: 90%;
     margin: 0 5%;
