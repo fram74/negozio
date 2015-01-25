@@ -140,9 +140,13 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Times New Roman, Helvetica, Helvetica Neue, Arial;
+    font-family: Times New Roman, Helvetica, Helvetica Neue, Arial;
     /*background: #538eb4;*/
     color: #2872a1;
+}
+
+.contatti {
+    line-height: 1em;
 }
 
 .wrapper {
@@ -342,6 +346,15 @@ h2 {
     MOBILE: Main
    ============== */
 
+.brands {
+    width:125px;
+    height:54px;
+    margin-right:5px;
+    border:#CCCCCC 1px solid;
+    padding:3px;
+}
+
+
 .main article h1 {
     font-size: 2em;
 }
@@ -366,6 +379,9 @@ h2 {
     line-height: 20.7999992370605px;
     text-align: center;
 }
+
+
+
 
 /* ===============
     ALL: IE Fixes

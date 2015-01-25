@@ -28,8 +28,6 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
-
 SITE_ID=1
 
 # Application definition
@@ -105,9 +103,14 @@ TEMPLATE_DIRS = (
 )
 
 CMS_TEMPLATES = (
-        ('home_page_template.html', 'Home Page'),
-        ('news_template.html', 'News Template'),
+    ('home_page_template.html', 'Template One'),
+    ('news_template.html', 'News Template'),
+    ('plain_page.html', 'Pagina Vuota'),
+    ('timeline.html', 'Timeline'),
+    ('rolex.html', 'Rolex'),
+    ('contatti.html', 'Contatti'),
 )
+
 
 ROOT_URLCONF = 'lucchetti.urls'
 
@@ -130,10 +133,14 @@ GALLERY_TEMPLATES = (
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'negozio',                      # Or path to database file if using sqlite3.
+        'USER': 'negozio',                      # Not used with sqlite3.
+        'PASSWORD': 'pippero',                  # Not used with sqlite3.
+        'HOST': '127.0.0.1',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
+    },
     }
-}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -152,14 +159,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_ROOT = os.path.join(PROJECT_PATH, "static")
+STATIC_ROOT = os.path.join(PROJECT_PATH, "../var/www/static")
 STATIC_URL = "/static/"
 
-MEDIA_ROOT = os.path.join(PROJECT_PATH, "media")
+MEDIA_ROOT = os.path.join(PROJECT_PATH, "../var/www/media")
 MEDIA_URL = "/media/"
 
 STATICFILES_DIRS = (
-    "/Users/fram/Development/cms-negozio/negozio/lucchetti/local_static/",
+    "/Users/Francesco/Development/negozio/lucchetti/static/",
 )
 
 SOUTH_MIGRATION_MODULES = {
@@ -178,5 +185,7 @@ CMSPLUGIN_FILER_IMAGE_STYLE_CHOICES = (
     ('default', 'Default'),
     ('promo-img', 'Promo Image'),
 )
+
+FILER_0_8_COMPATIBILITY_MODE=True
 
 CMSPLUGIN_FILER_IMAGE_DEFAUL_STYLE = 'promo-img'

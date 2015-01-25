@@ -128,7 +128,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Times New Roman, Helvetica, Helvetica Neue, Arial;
+    font-family: Times New Roman, Helvetica, Helvetica Neue, Arial;
     /*background: #538eb4;*/
     color: white;
 }

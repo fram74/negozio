@@ -1,0 +1,26 @@
+{% extends "base-negozio.html" %}
+{% load cms_tags %}
+
+{% block extra_js %}
+{% endblock %}
+
+{% block base_content %}
+    <div style="margin: 20px;">
+    <div style='width:40%; position: relative; float: left;margin-right:10px;' class='contatti'>
+        {% placeholder contatti_testo %}
+    </div>
+
+    <div style='width:50%; position: relative; float: left;'>
+        <iframe width="600" height="450" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?q=Luigi+Lucchetti+Di+Lucchetti+Giovanni+E+C.+Sas,+Via+Martiri+della+Liberazione,+Chiavari,+Genoa,+Italy&key=AIzaSyApJ2S2fydXhh5uOPKgrNfViKlR5qudrsI"></iframe>
+    </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <div class="footer-container" style="background-color:white; margin-top:10px;margin-bottom:10px;background-color: lightblue;">
+        <div class="left-footer" style="margin-left: 50%; left:-37px; margin-top: 5px; margin-bottom: 10px;">
+            <img class="filer_image left" alt="putto.jpg" src="/media/filer_public_thumbnails/filer_public/ea/6d/ea6d33b0-6b8a-4728-a2fb-01fbc7d1bcdd/putto.jpg__150x150_q85_crop_subsampling-2_upscale.jpg" width="150" height="150">
+        </div>
+    </div>
+{% endblock %}

@@ -117,6 +117,7 @@ CMS_TEMPLATES = (
         ('plain_page.html', 'Pagina Vuota'),
         ('timeline.html', 'Timeline'),
         ('rolex.html', 'Rolex'),
+        ('contatti.html', 'Contatti'),
 )
 
 ROOT_URLCONF = 'lucchetti.urls'
