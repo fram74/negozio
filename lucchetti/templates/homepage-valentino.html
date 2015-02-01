@@ -1,0 +1,39 @@
+{% extends "home_page_template.html" %}
+{% load cms_tags %}
+
+{% block extra_js %}
+    <script type="text/javascript" src="/static/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" href="/static/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+{% endblock %}
+
+{% block main-container-style %}  style="background-image: url(/static/img/cuori.jpeg); background-repeat: repeat;"{% endblock %}
+
+{% block end_extra_js %}
+    <script>
+        $(document).ready(function() {
+
+            /* This is basic - uses default settings */
+
+            $("a").fancybox();
+
+            /* Using custom settings */
+
+            $("a#inline").fancybox({
+                'hideOnContentClick': true
+            });
+
+            /* Apply fancybox to multiple items */
+
+            $("a.group").fancybox({
+                'transitionIn'  :       'elastic',
+                'transitionOut' :       'elastic',
+                'speedIn'               :       600,
+                'speedOut'              :       200,
+                'overlayShow'   :       false
+            });
+
+        });
+    </script>
+{% endblock %}
+</script>

@@ -553,6 +553,8 @@ h2 {
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
+        background-image: url(/static/img/cuori.jpeg);
+        background-repeat: repeat;
     }
 
     .frame-button {

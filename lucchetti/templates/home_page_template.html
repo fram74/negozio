@@ -4,9 +4,11 @@
 {% block extra_js %}
 <script type="text/javascript" src="/static/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 <link rel="stylesheet" href="/static/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
 {% endblock %}
 
 {% block base_content %}
+            <div class="main wrapper clearfix">
 
 
             <div class='promo-wrapper'>
@@ -50,9 +52,10 @@
                 </div>
 
                 <div style='clear:both;'></div>
-
+            </div>
 
 {% endblock %}
+
 {% block end_extra_js %}
 <script>
 $(document).ready(function() {
