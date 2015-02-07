@@ -153,7 +153,23 @@ body {
     width: 90%;
 }
 
+.ft-title {
+    display:inline-table;
+    width: 15%;
+    padding-left: 15px;
+}
 
+.ft-title > h4 {
+    font-size: 0.7em;
+    margin: 1em 0;
+
+}
+
+.ft-title > p {
+    font-size: 0.7em;
+    margin: 0.2em 0;
+
+}
 
 /* ===================
     ALL: Orange Theme
