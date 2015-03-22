@@ -1,0 +1,6 @@
+build/*
+*.pyc
+negozio_env/*
+.idea/*
+examples/*
+var/*
