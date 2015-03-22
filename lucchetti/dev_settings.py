@@ -110,6 +110,7 @@ CMS_TEMPLATES = (
     ('timeline.html', 'Timeline'),
     ('rolex.html', 'Rolex'),
     ('contatti.html', 'Contatti'),
+    ('presentation_template.html', 'Presentation Page'),
 )
 
 
