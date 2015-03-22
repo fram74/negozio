@@ -9,31 +9,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=1024">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montaga|Buenard">
     <link rel="stylesheet" href="/static/css/normalize.min.css">
     <link rel="stylesheet" href="/static/css/main.css">
     {% render_block "css" %}
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    <script type="text/javascript" src="/static/js/jquery-slide-images.js"></script>
-    <script type="text/javascript">
-        marqueeInit({
-            uniqueid: 'mycrawler2',
-            style: {
-                'padding': '1px',
-                'width': 'auto',
-                'height': '62px'
-            },
-            inc: 10, //speed - pixel increment for each iteration of this marquee's movement
-            mouse: 'cursor driven', //mouseover behavior ('pause' 'cursor driven' or false)
-            moveatleast: 2,
-            neutral: 150,
-            savedirection: true,
-            random:false
-        });
-    </script>
     {% block extra_js %}
-
     {% endblock %}
 </head>
 <body>
@@ -43,7 +25,7 @@
         <![endif]-->
 
 <div class="header-container">
-    <header class="wrapper clearfix">
+    <header class="wrapper clearfix" style="min-width: 1024px;">
         <div class="title-wrapper"><img class="title " src="/static/img/logo-lucchetti.jpg"></span></div>
         <div>
             <nav>
@@ -55,67 +37,100 @@
     </header>
 </div>
 
-<div class="main-container">
-    <div class="main wrapper clearfix">
+<div class="main-container" {% block main-container-style %}{% endblock %} >
+
 
         {% block base_content %}
+
         {% endblock %}
 
-        <div style="width:100%; margin-top: 10px; overflow:hidden; background:url(image/brands.jpg) no-repeat 0px 5px;">
-
-            <div style="width: auto; overflow:hidden; " class="marquee1" id="mycrawler2">
-
-                <img class='brands' title="" alt="water.jpg" style="display: inline; vertical-align: top;" src="/static/img/marchi/AdolfoCourrier.jpg">
-                <img class='brands' title="" alt="mountain.jpg" style="display: inline; vertical-align: top;" src="/static/img/marchi/Crivelli.jpg">
-                <img class='brands' title="" alt="beach.jpg" style="display: inline; vertical-align: top;" src="/static/img/marchi/Dodo.jpg">
-                <img class='brands' title="" alt="bonsai.jpg" style="display: inline; vertical-align: top;" src="/static/img/marchi/GiorgioVisconti.jpg">
-                <img class='brands' title="" alt="coco.jpg" style="display: inline; vertical-align: top;" src="/static/img/marchi/Lebebe.jpg ">
-                <img class='brands' title="" alt="coco.jpg" style="display: inline; vertical-align: top;" src="/static/img/marchi/Leopizzo.jpg">
-                <img class='brands' title="" alt="coco.jpg" style="display: inline; vertical-align: top;" src="/static/img/marchi/NouvelleBague.jpg">
-                <img class='brands' title="" alt="coco.jpg" style="display: inline; vertical-align: top;" src="/static/img/marchi/mimi.jpg">
-                <img class='brands' title="" alt="coco.jpg" style="display: inline; vertical-align: top;" src="/static/img/marchi/Pandora.jpg">
-                <img class='brands' title="" alt="coco.jpg" style="display: inline; vertical-align: top;" src="/static/img/marchi/PippoPerez.jpg">
-                <img class='brands' title="" alt="coco.jpg" style="display: inline; vertical-align: top;" src="/static/img/marchi/Pomellato 67.jpg">
-                <img class='brands' title="" alt="coco.jpg" style="display: inline; vertical-align: top;" src="/static/img/marchi/raspini.jpg">
-                <img class='brands' title="" alt="coco.jpg" style="display: inline; vertical-align: top;" src="/static/img/marchi/SantAgostino.jpg">
-
-                <img class='brands' title="" alt="coco.jpg" style="display: inline; vertical-align: top;" src="/static/img/marchi/SilviaKelly.jpg">
-            </div>
-        </div>
-
-        <div class="footer-container" style="background-color:white; margin-top:10px;margin-bottom:10px;background-color: lightblue;">
-            <!--
-            <div class="right-footer" style="margin-right: 15px; margin-top: 24px;">
-                <p class='footer-text'>Luigi Lucchetti Sas</p>
-                <p class='footer-text'>di Giovanni Lucchetti &amp; C.</p>
-                <p class='footer-text'>Via Martiri della Liberazione, 54-60</p>
-                <p class='footer-text'>16043 Chiavari (GE)</p>
-                <p>&nbsp;</p>
-                <p class='footer-text'>P.IVA 00190470997</p>
-                <p class='footer-text'>Tel: (+39) 0185 309618</p>
-                <p class='footer-text'>Fax:&nbsp;<span style="line-height: 20.7999992370605px;">(+39) 0185 300256</span></p>
-                <p class='footer-text'><span style="line-height: 20.7999992370605px;">Email: info@luigilucchetti.com</span></p>
-                <p style="line-height: 20.7999992370605px; text-align: center;margin-top: 29px;"><a href="https://www.facebook.com/luigilucchetti" class="filer_image_link">
-                    <img style="width: 32px; height: 32px;" class="filer_image " alt="Facebook_icon_1_color.jpg" src="/media/filer_public_thumbnails/filer_public/8f/02/8f0269f1-bb65-475f-865f-07973ac6ace6/facebook_icon_1_color.jpg__52x52_q85_crop_subsampling-2_upscale.jpg"></a>
-                <p/>
-                <br>
-            </div>
-            -->
-            <div class="left-footer" style="margin-left: 50%; left:-37px; margin-top: 20px; margin-bottom: 20px;">
-                <img class="filer_image left" alt="putto.jpg" src="/media/filer_public_thumbnails/filer_public/ea/6d/ea6d33b0-6b8a-4728-a2fb-01fbc7d1bcdd/putto.jpg__150x150_q85_crop_subsampling-2_upscale.jpg" width="150" height="150">
-            </div>
-        </div>
 
 
-    </div>
+
 
 </div> <!-- #main -->
 
+{% block footer %}
+    <div class="footer-container wrapper" style="background-color:white; margin-top:5px;  min-width: 1024px; border-bottom: solid 1px #bfa47e;">
+        <div style="width: 100%;padding: 0px 0px 0px 10px;/* border-bottom: solid 3px black; *//* border-top: solid 3px black; */">
+            <div class="ft-title" style="width: 25%;">
+                <h4>SERVIZI E ASSISTENZA</h4></div>
+            <div class="ft-title"><h4>I GIOIELLI</h4></div>
+            <div class="ft-title"><h4>OROLOGI</h4></div>
+            <div class="ft-title"><h4>ACCESSORI</h4></div>
+            <div class="ft-title"><h4 style="text-align:center;">ULTIME NOTIZIE</h4></div>
+        </div>
+    </div>
 
+    <div class="footer-container wrapper" style="background-color:white; margin-top:5px;/* background-color: lightblue; *//* border-bottom: solid 1px #2872a1; */   /* border-top: solid 1px #2872a1; */">
+        <div style="width: 100%;padding: 0px 0px 0px 10px;  min-width: 1024px;/* border-top: solid 3px black; */">
+            <div class="ft-title" style="width: 25%;">
+                <p> Email: <a href="mailto: info@luigilucchetti.com">info@luigilucchetti.com</a>
+                </p>
+                <p> Tel: (+39) 0185 309618 </p>
+                <p> Fax: (+39) 0185 300256 </p>
+                <p> P. IVA 00190470997 </p>
+            </div>
+            <div class="ft-title">
+                <p>Dodo</p>
+                <p>Pomellato 67</p>
+                <p>Pandora</p>
+                <p>Leo Pizzo</p>
+                <p>Crivelli</p>
+                <p>Mikimoto</p>
+                <p>Sant Agostino</p>
+                <p>Adolfo Courrier</p>
+                <p>Mimi'</p>
+                <p>Le Bebe'</p>
+                <p>Giorgio Visconti</p>
+                <p>Nouvelle Bague'</p>
+                <p>Silvia Kelly</p>
+                <p>Pippo Perez</p>
+            </div>
+            <div class="ft-title">
+                <p>Rolex</p>
+                <p>Tudor</p>
+                <p>Baume Mercier</p>
+                <p>Tissot</p>
+                <p>Citizen</p>
+                <p>CK</p>
+                <p>Swatch</p>
+                <p>Flick Flack</p>
+            </div>
+            <div class="ft-title">
+                <p>Mont Blanc</p>
+                <p>Giovanni Raspini</p>
+                <p>Schiavon</p>
+                <p>Pampaloni</p>
+                <p>Vavassori</p>
+            </div>
+            <div class="ft-title">
+                <p style="text-align: center;">
+                <a href="https://www.facebook.com/luigilucchetti">
+                    <img style="width: 32px; height: 32px;" class="filer_image " alt="Facebook" src="/static/img/facebook_logo_def.jpg">
+                </a>
+                </p>
+                <p style="text-align: center;">
+                    <a href="https://instagram.com/luigi_lucchetti_1873">
+                        <img style="width: 32px; height: 32px;" class="filer_image " alt="Instagram" src="/static/img/instagram_logo_def.jpg">
+                    </a>
+                </p>
+                <!--
+                <p style="text-align: center;">
+                    <a href="https://www.facebook.com/luigilucchetti">
+                        <img style="width: 32px; height: 32px;" class="filer_image " alt="YouTube" src="/static/img/youtube_logo.jpg" >
+                    </a>
+                </p>
+                -->
+            </div>
+        </div>
+    </div>
+{% endblock %}
 
 
 </div>
 </div> <!-- #main-container -->
+
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -126,12 +141,14 @@
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-XXXXX-X');ga('send','pageview');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58629195-1', 'auto');
+    ga('send', 'pageview');
+
 </script>
 
 {% render_block "js" %}
