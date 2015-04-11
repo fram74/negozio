@@ -596,6 +596,10 @@ h2 {
         width: 28%;
     }
 
+.wrapper {
+    width: 1026px; /* 1140px - 10% for margins */
+    margin: 0 auto;
+}
 
 @media only screen and (min-width: 1140px) {
 
