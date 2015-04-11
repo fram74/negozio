@@ -9,47 +9,64 @@
 
 {% block base_content %}
 
+    <div class="tile-grid">
+        <!-- First Row -->
+        <div class="tile tile-grid-item tile-column-8">
+            <div class="promo-container">
+                {% placeholder rolex_corner %}
+            </div>
+        </div>
 
+        <div class="tile tile-grid-item tile-column-4">
+            <div class="promo-container">
+                {% placeholder marchi_promo %}
+            </div>
+        </div>
 
-            <div class='promo-wrapper'>
-                    <div class='promo-img-container promo-container'>
-                        {% placeholder rolex_corner %}
-                    </div>
-                    <div class='promo-sec-img-container promo-container' id='site-slides' style='visibility: hidden; -webkit-tap-highlight-color: rgba(0,0,0,0);'>
-                        {% placeholder marchi_promo %}
-                    </div>
+        <!-- Second Row -->
+        <div class="tile tile-grid-item tile-column-4">
+            <div class="promo-container">
+                {% placeholder promo_image_2_1 %}
+            </div>
+        </div>
+        <div class="tile tile-grid-item tile-column-8">
+            <div class="promo-container">
+                {% placeholder promo_image_2_2 %}
+            </div>
+        </div>
 
-
-
-                </div>
-                <div class='promo-wrapper'>
-
-                    <div class='promo-sec-img-container-left promo-container' style='-webkit-tap-highlight-color: rgba(0,0,0,0);'>
-                        {% placeholder promo_image_2_1 %}
-                    </div>
-                    <div class='promo-img-container-right promo-container'>
-                        {% placeholder promo_image_2_2 %}
-
-                    </div>
-                </div>
-
-                <div class='promo-wrapper'>
-                     <div class='promo-sec-img-container' style='-webkit-tap-highlight-color: rgba(0,0,0,0);'>
-                        <div class="promo-container small-img">
-                        {% placeholder promo_image_3_2 %}
-                        </div>
-                        <div class="promo-container">
-                        {% placeholder promo_image_3_3 %}
-                        </div>
-                    </div>
-                    <div class='promo-img-container promo-container'>
+        <!-- Third Row -->
+        <div class="tile-table tile-auto tile-column-12">
+            <div class="tile-table-row">
+                <div class="tile-table-cell tile tile-column-8">
+                    <div class="promo-container">
                         {% placeholder promo_image_3_1 %}
                     </div>
-
-
-
-
                 </div>
+                <div class="tile-table-cell tile tile-column-4">
+                    <div class="tile-table">
+
+                            <div class="promo-container small-img">
+                                {% placeholder promo_image_3_2 %}
+                            </div>
+                            <div class="promo-container">
+                                {% placeholder promo_image_3_3 %}
+                            </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
 
                 <div style='clear:both;'></div>
 
