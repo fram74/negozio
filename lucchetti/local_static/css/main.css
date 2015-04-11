@@ -309,6 +309,14 @@ nav ul li a:hover {
     float:none;
 }
 
+.promo-full-image-container {
+    width: 100%;
+    position: relative;
+    float: left;
+    max-height: 418px;
+    box-sizing: border-box;
+}
+
 .promo-sec-img-container {
     width:33.3%;
     position: relative;

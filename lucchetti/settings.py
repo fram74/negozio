@@ -120,6 +120,7 @@ CMS_TEMPLATES = (
         ('rolex.html', 'Rolex'),
         ('contatti.html', 'Contatti'),
         ('presentation_template.html', 'Presentation Page'),
+        ('orologi_template.html', 'Pagina Orologi'),
 )
 
 ROOT_URLCONF = 'lucchetti.urls'
