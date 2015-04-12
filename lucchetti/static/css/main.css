@@ -150,7 +150,8 @@ body {
 }
 
 .wrapper {
-    width: 90%;
+    width: 98%;
+    min-width: 1024px;
 }
 
 .ft-title {
@@ -209,9 +210,6 @@ body {
     margin-bottom:10px;
 }
 
-.main {
-    min-width: 1024px;
-}
 
 .title {
     color: #2872a1;
@@ -597,6 +595,8 @@ h2 {
     }
 
 .wrapper {
+
+    width: 1024px; /* 1140px - 10% for margins */
     margin: 0 auto;
 }
 
@@ -607,7 +607,8 @@ h2 {
    =============== */
 
     .wrapper {
-       margin: 0 auto;
+        width: 1024px; /* 1140px - 10% for margins */
+        margin: 0 auto;
     }
 
     .frame-button {
