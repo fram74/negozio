@@ -1,3 +1,5 @@
+<!-- TEMPLATE PER LE PAGINE DI PRESENTAZIONE (TIPO IL BRACCIALE)-->
+
 {% load cms_tags sekizai_tags menu_tags%}
 <html>
 <head>
@@ -7,10 +9,11 @@
 
 
     <style type="text/css">.nav{padding-left:0;}.nav li{display:inline;list-style-type:none;padding-right:20px;}</style>
-    <link href="/static/css/base-mini.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+    <link href="/static/css/base.css" rel="stylesheet" type="text/css">
     {% render_block "css" %}
     <style type="text/css">.cf-hidden { display: none; } .cf-invisible { visibility: hidden; }</style>
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montaga|Buenard">
+    
 </head>
 
 
@@ -21,33 +24,37 @@
     <a href="/en/">
     </a>
 </div>
-<div class="parallax-image" style="height: 1000px; background-image: url('/static/img/Caruggio Dritto.JPG');
+<div class="parallax-image" style="height: 1000px; background-image: url('/static/img/Caruggio Dritto_Def.JPG');
             background-position: 23% 0%; ">
 
     <div class="container">
         <div class="container-parallax">
-            <h1>CAROGGIO DRITO</h1>
+            <h3 style='text-align: right;'>Luigi Lucchetti e Giovanni Raspini</h3>
+            <h1 style='text-align: center;'>Come nasce il bracciale di Chiavari</h1>
+            <p></p>
+            <p>Caroggio Drito</p>
             <p></p>
         </div>
     </div>
 
+
 </div><div class="container container-html">
-    <div class="container-2up">
+    <div class="container-full">
         <p>
-            <img src="/static/img/bracciale_chiavari_curvo.jpg" style="" class=" product-feature">
+            <img src="/static/img/bracciale_chiavari_dritto.jpg" style="" class=" product-feature">
         </p>
     </div>
-    <div class="container-2up">
-        <h2>E' Chiavari. E Chiavari è Caroggio Drito.</h2>
-        <h4>Un’infilata di portici, uno diverso dall’altro, in materiali diversi, provenienti da epoche diverse. Chi abita a Chiavari sa che il mondo gira attorno al Caroggio (e non attorno al sole, come è scritto sui testi).&nbsp;</h4>
+    <div class="container-full">
+        <h2 style="text-align: center;">Caroggio Drito</h2>
+        <h4 style="text-align: center;">E' Chiavari. E Chiavari è Caroggio Drito. Un’infilata di portici, uno diverso dall’altro, in materiali diversi, provenienti da epoche diverse. Chi abita a Chiavari sa che il mondo gira attorno al Caroggio (e non attorno al sole, come è scritto sui testi).</h4>
     </div>
 </div>
-<div class="parallax-image" style="height: 500px; background-image: url('/static/img/Palazzo_di_giustizia.JPG');
+<div class="parallax-image" style="height: 500px; background-image: url('/static/img/Palazzo_di_giustizia_Def.JPG');
             background-position: 50% 40%; ">
 
     <div class="container">
         <div class="container-parallax">
-            <h1 style="text-align: center;">Piazza Mazzini</h1>
+            <h1 style="text-align: right;">Piazza Mazzini</h1>
         </div>
     </div>
 
@@ -56,11 +63,11 @@
         <p style="text-align: center;">
             <img src="/static/img/bracciale_chiavari_dritto.jpg" style="" class=" product-feature">
         </p>
-        <h2 style="text-align: center;">Piazza Mazzini è una festa.</h2>
+        <h2 style="text-align: center;">Piazza Mazzini è una festa</h2>
         <h4 style="text-align: center;">Col chiassoso mercato che ogni mattina compare per poi riapparire il mattino successivo. Al pomeriggio la piazza si svuota delle bancarelle e si riempie di bambini che schiamazzano, si rincorrono, giocano a pallone.</h4>
     </div>
 </div>
-<div class="parallax-image" style="height: 500px; background-image: url('/static/img/Cattedrale.JPG');
+<div class="parallax-image" style="height: 500px; background-image: url('/static/img/Cattedrale_Def.JPG');
             background-position: 50% 40%; ">
 
     <div class="container">
@@ -70,17 +77,19 @@
     </div>
 
 </div><div class="container container-html">
-    <div class="container-2up-right">
-        <img src="/static/img/bracciale_chiavari_curvo.jpg" style="" class=" product-feature">
+    <div class="container-full">
+        <img src="/static/img/bracciale_chiavari_dritto.jpg" style="" class=" product-feature">
     </div>
-    <div class="container-2up-right">
+    <div class="container-full">
 
-        <h4>La storia della Madonna dell’Orto nasce da una storia piccola. Da un orto, e da un’apparizione. Infilzata a terra da ciclopiche travi di marmo, è simbolo della città.</h4>
+        <h2 style="text-align: center;">Cattedrale</h2>
+        <h4 style="text-align: center;">La storia della Madonna dell’Orto nasce da una storia piccola. Da un orto, e da un’apparizione. Infilzata a terra da ciclopiche travi di marmo, è simbolo della città.</h4>
+    </div>
         <p style="">&nbsp;</p>
         <p style="">&nbsp;</p>
     </div>
 </div>
-<div class="parallax-image" style="height: 500px; background-image: url('/static/img/Castello.jpg');
+<div class="parallax-image" style="height: 500px; background-image: url('/static/img/Castello_Def.jpg');
             background-position: 50% 40%; ">
 
     <div class="container">
@@ -94,13 +103,15 @@
         <p style="text-align: center;">
             <img src="/static/img/bracciale_chiavari_dritto.jpg" style="" class=" product-feature">
         </p>
-        <h4>Il Castello è un luogo misterioso. Veglia la città, muto e silenzioso. È un difensore segreto. Il Castello ci ricorda di quando eravamo nobili. Di quando la città era cinta di mura e nasceva tutta attorno al castello.</h4>
+        <h2 style="text-align: center;">Castello di Chiavari</h2>
+        <h4 style="text-align: center;">Il Castello è un luogo misterioso. Veglia la città, muto e silenzioso. È un difensore segreto. Il Castello ci ricorda di quando eravamo nobili. Di quando la città era cinta di mura e nasceva tutta attorno al castello.</h4>
+    </div>
         <p style="">&nbsp;</p>
         <p style="">&nbsp;</p>
 
     </div>
 </div>
-<div class="parallax-image" style="height: 500px; background-image: url('/static/img/Colonia Fara.jpg');
+<div class="parallax-image" style="height: 500px; background-image: url('/static/img/Colonia Fara_Def.jpg');
             background-position: 50% 40%; ">
 
     <div class="container">
@@ -110,16 +121,19 @@
     </div>
 
 </div><div class="container container-html">
-    <div class="container-2up-right">
-        <p style="text-align: right;">
-            <img src="/static/img/bracciale_chiavari_curvo.jpg" style="" class=" product-feature">
+    <div class="container-full">
+        <p style="text-align: center;">
+            <img src="/static/img/bracciale_chiavari_dritto.jpg" style="" class=" product-feature">
         </p>
     </div>
-    <div class="container-2up-right">
-        <h2>Colonia Fara è estate per i chiavaresi.</h2>
-        <h4>Una maestosa prua lanciata verso il mare ha visto intere generazioni di Chiavaresi bagnarsi e ciattellare ai suoi piedi.</h4>
-        <p style="">&nbsp;</p>
-        <p style="">&nbsp;</p>
+    <div class="container-full">
+        <h2 style="text-align: center;">Colonia Fara</h2>
+        <h4 style="text-align: center;">Colonia Fara è estate per i chiavaresi. Una maestosa prua lanciata verso il mare ha visto intere generazioni di Chiavaresi bagnarsi e ciattellare ai suoi piedi.</h4>
+    </div>
+    <p style="">&nbsp;</p>
+    <p style="">&nbsp;</p>
+        <a style='text-decoration: none;' href="/"> <h4 style='text-align: center;'>Torna alla Home Page</h4></a>
+
     </div>
 </div>
 
