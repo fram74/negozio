@@ -1,0 +1,143 @@
+{% extends "base-negozio.html" %}
+{% load cms_tags %}
+
+{% block extra_js %}
+    <script type="text/javascript" src="/static/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" href="/static/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+{% endblock %}
+
+{% block extra_css %}
+
+    <link rel="stylesheet" href="/static/css/tiles.css" type="text/css" media="screen" />
+
+{% endblock %}
+
+{% block base_content %}
+    <div class="tile-grid">
+        <!-- First Row -->
+        <div class="tile tile-grid-item tile-column-12">
+            <div class="promo-container">
+            {% placeholder orologi_top %}
+            </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="tile tile-grid-item tile-column-8">
+            <div class="promo-container">
+            {% placeholder promo_image_2_1 %}
+            </div>
+        </div>
+        <div class="tile tile-grid-item tile-column-4">
+            <div class="promo-container">
+            {% placeholder promo_image_2_2 %}
+            </div>
+        </div>
+
+        <!-- Third Row -->
+        <div class="tile tile-grid-item tile-column-4" style='clear: both;'>
+            <div class="promo-container">
+            {% placeholder promo_image_3_1 %}
+            </div>
+        </div>
+
+        <div class="tile tile-grid-item tile-column-8">
+            <div class="promo-container">
+            {% placeholder promo_image_3_2 %}
+            </div>
+        </div>
+
+
+        <!-- Fourth Row -->
+        <div class="tile tile-grid-item tile-column-12" style='clear: both;'>
+            <div class="promo-container">
+            {% placeholder promo_image_3_4 %}
+            </div>
+        </div>
+
+    </div>
+
+
+<!--
+
+    <div class='promo-wrapper'>
+        <div class='promo-full-img-container promo-container'>
+            {% placeholder orologi_top %}
+        </div>
+    </div>
+    <div class='promo-wrapper'>
+
+        <div class='promo-sec-img-container-left promo-container' style='-webkit-tap-highlight-color: rgba(0,0,0,0);'>
+            {% placeholder promo_image_2_1 %}
+        </div>
+        <div class='promo-img-container-right promo-container'>
+            {% placeholder promo_image_2_2 %}
+
+        </div>
+    </div>
+
+    <div class='promo-wrapper'>
+        <div class='promo-sec-img-container' style='-webkit-tap-highlight-color: rgba(0,0,0,0);'>
+            <div class="promo-container small-img">
+
+                {% placeholder promo_image_3_1 %}
+            </div>
+            <div class="promo-container">
+                {% placeholder promo_image_3_2 %}
+            </div>
+        </div>
+        <div class='promo-sec-img-container' style='-webkit-tap-highlight-color: rgba(0,0,0,0);'>
+            <div class="promo-container small-img">
+                {% placeholder promo_image_3_3 %}
+            </div>
+            <div class="promo-container">
+                {% placeholder promo_image_3_4 %}
+            </div>
+        </div>
+        <div class='promo-sec-img-container' style='-webkit-tap-highlight-color: rgba(0,0,0,0);'>
+            <div class="promo-container small-img">
+                {% placeholder promo_image_3_5 %}
+            </div>
+            <div class="promo-container">
+                {% placeholder promo_image_3_6 %}
+            </div>
+        </div>
+
+-->
+
+
+
+
+    <div style='clear:both;'></div>
+
+
+{% endblock %}
+
+{% block end_extra_js %}
+    <script>
+        $(document).ready(function() {
+
+            /* This is basic - uses default settings */
+
+            $("a").fancybox();
+
+            /* Using custom settings */
+
+            $("a#inline").fancybox({
+                'hideOnContentClick': true
+            });
+
+            /* Apply fancybox to multiple items */
+
+            $("a.group").fancybox({
+                'transitionIn'  :       'elastic',
+                'transitionOut' :       'elastic',
+                'speedIn'               :       600,
+                'speedOut'              :       200,
+                'overlayShow'   :       false
+            });
+
+        });
+    </script>
+{% endblock %}
+</script>

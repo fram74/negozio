@@ -112,6 +112,8 @@ CMS_TEMPLATES = (
     ('contatti.html', 'Contatti'),
     ('presentation_template.html', 'Presentation Page'),
     ('orologi_template.html', 'Pagina Orologi'),
+    ('gioielli_template.html', 'Pagina Gioielli'),
+
 )
 
 
