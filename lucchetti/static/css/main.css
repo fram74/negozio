@@ -596,8 +596,8 @@ h2 {
 
 .wrapper {
 
-    width: 1024px; /* 1140px - 10% for margins */
-    margin: 0 auto;
+    width: 94%; /* 1140px - 10% for margins */
+    margin: 0 3% 0 3%;
 }
 
 @media only screen and (min-width: 1140px) {
@@ -607,8 +607,8 @@ h2 {
    =============== */
 
     .wrapper {
-        width: 1024px; /* 1140px - 10% for margins */
-        margin: 0 auto;
+        width: 94%; /* 1140px - 10% for margins */
+        margin: 0 3% 0 3%;
     }
 
     .frame-button {
