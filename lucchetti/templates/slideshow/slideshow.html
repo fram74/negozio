@@ -1,0 +1,38 @@
+{% load sekizai_tags thumbnail %}
+<div class="flexslider headergallery">
+    <ul class="slides">
+        {% autoescape off %}
+            {% for image in instance.images.all %}
+                <li>
+                    <figure>
+                        {% if image.url %}
+                            <a href="{{ image.url }}"><img src="/media/{{ PUBLIC_URL }}{{ image.image }}" alt="{{ image.name }}" /></a>
+                        {% else %}
+                            <img src="/media/{{ PUBLIC_URL }}{{ image.image }}" alt="{{ image.name }}" />
+                        {% endif %}
+                    </figure>
+                </li>
+            {% endfor %}
+        {% endautoescape %}
+    </ul>
+</div>
+
+{% addtoblock "css" %}
+    <link rel="stylesheet" href="/static/css/flexslider.css" />
+{% endaddtoblock %}
+
+{% addtoblock "js" %}
+    <script type="text/javascript" src="/static/js/jquery-flexslider-min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.flexslider').flexslider({
+                animation: "slide"
+                ,pauseOnAction: false
+                ,pauseOnHover: true
+                ,controlNav: false
+                ,directionNav: false
+                ,slideshowSpeed: 4000
+            });
+        });
+    </script>
+{% endaddtoblock %}
