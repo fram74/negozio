@@ -122,6 +122,7 @@ CMS_TEMPLATES = (
         ('presentation_template.html', 'Presentation Page'),
         ('orologi_template.html', 'Pagina Orologi'),
         ('gioielli_template.html', 'Pagina Gioielli'),
+        ('accessori_template.html', 'Pagina Accessori'),
 )
 
 ROOT_URLCONF = 'lucchetti.urls'
