@@ -103,7 +103,7 @@ TEMPLATE_DIRS = (
 )
 
 CMS_TEMPLATES = (
-    ('home_page_template.html', 'Template One'),
+    ('home_page_template_v2.html', 'Template One'),
     ('homepage-valentino.html', 'Home Page San Valentino'),
     ('news_template.html', 'News Template'),
     ('plain_page.html', 'Pagina Vuota'),

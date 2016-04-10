@@ -27,6 +27,10 @@ a {
     text-shadow: none;
 }
 
+a:focus  {
+    outline:0;
+}
+
 .left-footer {
     position:relative;
     float: left;
@@ -103,6 +107,7 @@ video {
 }
 
 .promo-container {
+    position: relative;
     border: solid 1px #bfa47e;
 }
 
