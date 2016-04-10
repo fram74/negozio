@@ -111,6 +111,7 @@ CMS_TEMPLATES = (
     ('rolex.html', 'Rolex'),
     ('contatti.html', 'Contatti'),
     ('presentation_template.html', 'Presentation Page'),
+    ('presentation_rapallo_template.html', 'Rapallo Presentation Page'),
     ('orologi_template.html', 'Pagina Orologi'),
     ('gioielli_template.html', 'Pagina Gioielli'),
     ('accessori_template.html', 'Pagina Accessori'),
