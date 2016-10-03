@@ -115,6 +115,7 @@ CMS_TEMPLATES = (
     ('orologi_template.html', 'Pagina Orologi'),
     ('gioielli_template.html', 'Pagina Gioielli'),
     ('accessori_template.html', 'Pagina Accessori'),
+    ('brands_template.html', 'Template per Brands'),
 
 )
 
