@@ -64,6 +64,7 @@ INSTALLED_APPS = (
     'cmsplugin_filer_image',
     'cmsplugin_filer_teaser',
     'cmsplugin_filer_video',
+    'cmsplugin_rawhtml',
     'slideshow',
     'adminsortable',
 )
@@ -119,6 +120,7 @@ CMS_TEMPLATES = (
         ('timeline.html', 'Timeline'),
         ('rolex.html', 'Rolex'),
         ('contatti.html', 'Contatti'),
+        ('presentation_page_base.html', 'Presentation Page Base'),
         ('presentation_template.html', 'Presentation Page'),
         ('presentation_rapallo_template.html', 'Rapallo Presentation Page'),
         ('orologi_template.html', 'Pagina Orologi'),

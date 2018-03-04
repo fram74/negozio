@@ -1,0 +1,7 @@
+{% if template_name %}
+<!-- BEGIN PLUGIN {{ template_name }} -->
+{%  endif %}
+{% block content %}{% endblock %}
+{% if template_name %}
+<!-- END PLUGIN {{ template_name }} -->
+{% endif %}
