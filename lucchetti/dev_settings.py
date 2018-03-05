@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from django.utils.translation import ugettext as _
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 gettext = lambda s: s
@@ -59,6 +60,7 @@ INSTALLED_APPS = (
     'cmsplugin_filer_image',
     'cmsplugin_filer_teaser',
     'cmsplugin_filer_video',
+    'cmsplugin_rawhtml',
     'slideshow',
     'adminsortable',
 
@@ -72,10 +74,10 @@ MIDDLEWARE_CLASSES = (
 #    'django.contrib.messages.middleware.MessageMiddleware',
 #    'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.doc.XViewMiddleware',
     'django.middleware.common.CommonMiddleware',
     'cms.middleware.page.CurrentPageMiddleware',
@@ -110,13 +112,13 @@ CMS_TEMPLATES = (
     ('timeline.html', 'Timeline'),
     ('rolex.html', 'Rolex'),
     ('contatti.html', 'Contatti'),
+    ('presentation_page_base.html', 'Presentation Page Base'),
     ('presentation_template.html', 'Presentation Page'),
     ('presentation_rapallo_template.html', 'Rapallo Presentation Page'),
     ('orologi_template.html', 'Pagina Orologi'),
     ('gioielli_template.html', 'Pagina Gioielli'),
     ('accessori_template.html', 'Pagina Accessori'),
-    ('brands_template.html', 'Template per Brands'),
-
+    ('brands_template.html', 'Template Marchi'),
 )
 
 
@@ -142,7 +144,7 @@ GALLERY_TEMPLATES = (
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'negozio',                      # Or path to database file if using sqlite3.
+        'NAME': 'negozio_new',                      # Or path to database file if using sqlite3.
         'USER': 'negozio',                      # Not used with sqlite3.
         'PASSWORD': 'pippero',                  # Not used with sqlite3.
         'HOST': '127.0.0.1',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -154,6 +156,15 @@ DATABASES = {
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
 LANGUAGE_CODE = 'it'
+
+LANGUAGES = (
+    ('it', ('Italian')),
+    ('en', ('English')),
+)
+
+LOCALE_PATHS = (
+    os.path.join(os.path.abspath(os.path.dirname(__file__)), '../locale'),
+)
 
 TIME_ZONE = 'UTC'
 
