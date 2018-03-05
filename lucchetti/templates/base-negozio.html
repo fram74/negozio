@@ -1,5 +1,5 @@
 <!-- TEMPLATE PER HOME PAGE E GRAN PARTE DELLE PAGINE -->
-{% load cms_tags sekizai_tags menu_tags%}
+{% load cms_tags sekizai_tags menu_tags i18n%}
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -59,11 +59,11 @@
     <div class="footer-container wrapper" style="background-color:white; margin-top:5px;  min-width: 1024px; border-bottom: solid 1px #bfa47e;">
         <div style="width: 100%;padding: 0px 0px 0px 10px;/* border-bottom: solid 3px black; *//* border-top: solid 3px black; */">
             <div class="ft-title" style="width: 25%;">
-                <h4>SERVIZI E ASSISTENZA</h4></div>
-            <div class="ft-title"><h4>I GIOIELLI</h4></div>
-            <div class="ft-title"><h4>OROLOGI</h4></div>
-            <div class="ft-title"><h4>ACCESSORI</h4></div>
-            <div class="ft-title"><h4 style="text-align:center;">ULTIME NOTIZIE</h4></div>
+                <h4>{% trans "SERVIZI E ASSISTENZA" %}</h4></div>
+            <div class="ft-title"><h4>{% trans "GIOIELLI" %}</h4></div>
+            <div class="ft-title"><h4>{% trans "OROLOGI" %}</h4></div>
+            <div class="ft-title"><h4>{% trans "ACCESSORI" %}</h4></div>
+            <div class="ft-title"><h4 style="text-align:center;">{% trans "ULTIME NOTIZIE" %}</h4></div>
         </div>
     </div>
 
