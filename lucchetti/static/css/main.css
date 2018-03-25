@@ -298,12 +298,12 @@ nav ul li a {
     text-align: center;
     text-decoration: none;
     font-weight: normal;
-    font-size: large;
+    font-size: x-large;
     font-weight: 700;
 
     color: #004152;
     text-decoration: none;
-    margin-right: 25px;
+    margin-right: 48px;
 }
 
 .news-wrapper {
@@ -443,7 +443,7 @@ h2 {
 
     nav a {
         float: left;
-        width: 13%;
+        width: 11%;
         margin: 0 1.7%;
         margin-bottom: 0;
         font-weight: normal;
