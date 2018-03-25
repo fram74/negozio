@@ -627,6 +627,32 @@ h2 {
         border: solid 3px #b8a063;
     }
 
+    nav ul li a {
+        margin-right: 52px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1300px) {
+    nav ul li a {
+        margin-right: 56px;
+    }
+
+}
+
+@media only screen and (min-width: 1500px) {
+    nav ul li a {
+        margin-right: 66px;
+    }
+
+}
+
+@media only screen and (min-width: 1700px) {
+    nav ul li a {
+        margin-right: 78px;
+    }
+
 }
 
 /* ==========================================================================
