@@ -127,6 +127,8 @@ CMS_TEMPLATES = (
         ('gioielli_template.html', 'Pagina Gioielli'),
         ('accessori_template.html', 'Pagina Accessori'),
         ('brands_template.html', 'Template Marchi'),
+        ('brands_template_2.html', 'Template Marchi Semplice'),
+        ('brands_template.html', 'Template Marchi'),
         ('feste_template.html', 'Template Feste'),
 )
 
